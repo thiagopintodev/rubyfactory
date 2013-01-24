@@ -57,6 +57,6 @@ module Rubyfactory
     config.assets.enabled = true
 
     # Version of your assets, change this if you want to expire all your assets
-    config.assets.version = '1.0'
+    config.assets.version = File.read('assets_version').to_s
   end
 end
